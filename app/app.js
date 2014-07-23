@@ -11,9 +11,9 @@ var fb, startData = {
 };
 
 if (window.location.hash) {
-  fb = new Firebase('https://mapstash.firebaseio.com/').child(window.location.hash.replace('#', ''));
+  fb = new Firebase('https://fiery-fire-7863.firebaseio.com/').child(window.location.hash.replace('#', ''));
 } else {
-  fb = new Firebase('https://mapstash.firebaseio.com/').push(startData);
+  fb = new Firebase('https://fiery-fire-7863.firebaseio.com/').push(startData);
   window.location.hash = fb.name();
 }
 
